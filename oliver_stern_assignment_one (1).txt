@@ -1,0 +1,12 @@
+﻿select * from seattle_jobs order by Last_Name;
+select * from seattle_jobs order by Rate limit 5;
+select * from seattle_jobs order by Rate;
+select * from seattle_jobs order by Rate, Department;
+select avg(Rate) from seattle_jobs;
+select Department, sum(Rate) as Total_Rate from seattle_jobs group by Department;
+select * from seattle_jobs order by Rate limit 10;
+select count(Last_Name) from seattle_jobs where Department = 'Parks & Recreation;
+select Department, count(Last_Name) as Total_Employees from seattle_job group by Department;
+select distinct Job from seattle_jobs;
+select count(*) from seattle_jobs where Job Like 'Pol Ofcr%';
+select avg(Rate) from seattle_jobs where Department = ‘Information Technology;
